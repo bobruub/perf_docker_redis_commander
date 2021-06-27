@@ -1,0 +1,7 @@
+FROM node:8.2
+
+RUN npm install -g redis-commander
+WORKDIR /home/node/app
+USER node
+EXPOSE 8081
+CMD ["redis-commander" ]
